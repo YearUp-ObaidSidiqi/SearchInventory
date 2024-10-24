@@ -84,19 +84,13 @@ public class StoreApp {
 //                Product p = new Product(productId, productName, productPrice);
 //                inventory.add(p);
 
-
                 inventory.add(new Product(Integer.parseInt(tokens[0]), tokens[1], Float.parseFloat(tokens[2])));
-
-
             }
-
             br.close();
-
         }
         catch(Exception e){
             System.out.println("ERROR!!");
         }
-
         return inventory;
     }
 
